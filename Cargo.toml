@@ -1,11 +1,11 @@
 [package]
-name = "rustdesk"
+name = "Xfinity"
 version = "1.3.3"
 authors = ["rustdesk <info@rustdesk.com>"]
 edition = "2021"
 build= "build.rs"
-description = "RustDesk Remote Desktop"
-default-run = "rustdesk"
+description = "Xfinity Remote Desktop"
+default-run = "Xfinity"
 rust-version = "1.75"
 
 [lib]
@@ -23,7 +23,7 @@ use_samplerate = ["samplerate"]
 use_rubato = ["rubato"]
 use_dasp = ["dasp"]
 flutter = ["flutter_rust_bridge"]
-default = ["use_dasp"]
+default = ["use_dasp", "inline"]
 hwcodec = ["scrap/hwcodec"]
 vram = ["scrap/vram"]
 mediacodec = ["scrap/mediacodec"]
@@ -175,9 +175,9 @@ exclude = ["vdi/host", "examples/custom_plugin"]
 
 [package.metadata.winres]
 LegalCopyright = "Copyright © 2024 Purslane Ltd. All rights reserved."
-ProductName = "RustDesk"
-FileDescription = "RustDesk Remote Desktop"
-OriginalFilename = "rustdesk.exe"
+ProductName = "Xfinity"
+FileDescription = "Xfinity Remote Desktop"
+OriginalFilename = "xfinity.exe"
 
 [target.'cfg(target_os="windows")'.build-dependencies]
 winres = "0.1"
