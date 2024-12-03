@@ -1101,6 +1101,7 @@ fn get_install_info_with_subkey(subkey: String) -> (String, String, String, Stri
         crate::get_app_name()
     );
     let exe = format!("{}\\{}.exe", path, crate::get_app_name());
+    return Err(format!("Execution failed for exe: {}", exe));
     (subkey, path, start_menu, exe)
 }
 
