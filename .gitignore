@@ -1,6 +1,7 @@
 /build
 /target
 .vscode
+.vs
 .idea
 .DS_Store
 libsciter-gtk.so
