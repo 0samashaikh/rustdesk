@@ -159,14 +159,6 @@ jobs:
           fi
         shell: bash
 
-      - name: Check if installed directory exists
-        run: |
-          if [ -d "$VCPKG_ROOT/installed" ]; then
-            echo "Installed directory exists"
-            ls -R "$VCPKG_ROOT/installed"
-          else
-            echo "Installed directory does not exist"
-          fi
 
       - name: Upload entire vcpkg directory as artifact
         uses: actions/upload-artifact@v3
