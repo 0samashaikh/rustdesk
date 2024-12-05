@@ -169,7 +169,7 @@ jobs:
           fi
 
       - name: Upload entire vcpkg directory as artifact
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: vcpkg-full
           path: ${{ github.workspace }}/vcpkg
