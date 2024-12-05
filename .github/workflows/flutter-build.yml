@@ -86,7 +86,7 @@ jobs:
       #       core.exportVariable('ACTIONS_RUNTIME_TOKEN', process.env.ACTIONS_RUNTIME_TOKEN || '');
 
       - name: Checkout source code
-         uses: actions/checkout@v4
+        uses: actions/checkout@v4
 
       # - name: Restore bridge files
       #   uses: actions/download-artifact@master
