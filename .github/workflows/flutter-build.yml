@@ -164,7 +164,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: vcpkg-full
-          path: ${{ github.workspace }}/vcpkg
+          path: C:/vcpkg
 
   #     - name: Build rustdesk
   #       run: |
